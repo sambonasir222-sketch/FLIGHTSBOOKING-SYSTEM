@@ -1,0 +1,345 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+}
+
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:rgba(0,31,84,.92);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    z-index:1000;
+}
+
+.logo{
+    color:#fff;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#FFD700;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:17px;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+    color:#FFD700;
+}
+
+.login-btn{
+    text-decoration:none;
+    background:#FFD700;
+    color:#002b5c;
+    padding:12px 28px;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.login-btn:hover{
+    background:white;
+}
+
+
+.hero{
+    height:60vh;
+    background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("images/dubai.jpg.png");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+    .hero-content{
+    max-width:700px;
+}
+
+.hero h1{
+    font-size:48px;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#FFD700;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:35px;
+    line-height:1.7;
+}
+
+.hero-btn{
+    display:inline-block;
+    background:#FFD700;
+    color:#002b5c;
+    padding:15px 35px;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:18px;
+    transition:.3s;
+}
+
+.hero-btn:hover{
+    background:rgb(233, 231, 231);
+}
+
+
+
+.features{
+    padding:80px 8%;
+}
+
+.features h2{
+    text-align:center;
+    font-size:38px;
+    color:#002b5c;
+    margin-bottom:50px;
+}
+
+.feature-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:25px;
+}
+
+.feature-card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.feature-card:hover{
+    transform:translateY(-10px);
+}
+
+.feature-card i{
+    font-size:45px;
+    color:#FFD700;
+    margin-bottom:20px;
+}
+
+.feature-card h3{
+    color:#002b5c;
+    margin-bottom:15px;
+}
+
+.feature-card p{
+    line-height:1.7;
+    color:#666;
+}
+
+
+.destinations{
+    padding:80px 8%;
+    background:#eef5fb;
+}
+
+.destinations h2{
+    text-align:center;
+    font-size:38px;
+    color:#002b5c;
+    margin-bottom:45px;
+}
+
+.destination-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.destination-card{
+    background:rgb(255, 255, 255);
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.destination-card:hover{
+    transform:translateY(-8px);
+}
+
+.destination-card img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+}
+
+.destination-info{
+    padding:20px;
+}
+
+.destination-info h3{
+    color:#002b5c;
+    margin-bottom:10px;
+}
+
+.destination-info p{
+    color:#666;
+    line-height:1.6;
+    margin-bottom:18px;
+}
+
+.card-btn{
+    display:inline-block;
+    background:#FFD700;
+    color:#002b5c;
+    text-decoration:none;
+    padding:10px 24px;
+    border-radius:25px;
+    font-weight:bold;
+}
+
+.card-btn:hover{
+    background:#002b5c;
+    color:white;
+}
+
+
+
+.stats{
+    background:#002b5c;
+    color:white;
+    padding:70px 8%;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:25px;
+    text-align:center;
+}
+
+.stat-box h2{
+    font-size:42px;
+    color:#FFD700;
+    margin-bottom:10px;
+}
+
+.stat-box p{
+    font-size:18px;
+}
+
+
+
+footer{
+    background:#00142d;
+    color:white;
+    padding:50px 8%;
+    text-align:center;
+}
+
+.footer-content h2{
+    color:#FFD700;
+    margin-bottom:15px;
+}
+
+.footer-content p{
+    margin:10px 0;
+    color:#ddd;
+}
+
+.social-icons{
+    margin:25px 0;
+}
+
+.social-icons a{
+    display:inline-block;
+    width:45px;
+    height:45px;
+    line-height:45px;
+    border-radius:50%;
+    background:#FFD700;
+    color:#002b5c;
+    margin:0 8px;
+    font-size:18px;
+    transition:.3s;
+}
+
+.social-icons a:hover{
+    background:white;
+}
+
+.copyright{
+    margin-top:25px;
+    font-size:15px;
+}
+
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    padding:15px;
+}
+
+nav ul{
+    flex-direction:column;
+    text-align:center;
+    margin-top:15px;
+}
+
+nav ul li{
+    margin:10px 0;
+}
+
+.hero h1{
+    font-size:42px;
+}
+
+.hero p{
+    font-size:17px;
+}
+
+.features h2,
+.destinations h2{
+    font-size:30px;
+}
+
+.login-btn{
+    margin-top:15px;
+}
+
+}
